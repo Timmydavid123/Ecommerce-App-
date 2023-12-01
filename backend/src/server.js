@@ -2,11 +2,11 @@ require('dotenv').config();
 const helmet = require('helmet');
 const express = require('express');
 const mongoose = require('mongoose');
-const authRoutes = require('./routes/auth');
+const authRoutes = require('../routes/auth');
 const cors = require('cors');
 const passport = require('passport');
 const session = require('express-session');
-const extractUserId = require('./middleware/extractUserId')
+const extractUserId = require('../middleware/extractUserId')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
